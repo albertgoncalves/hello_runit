@@ -10,5 +10,3 @@ test_suite = defineTestSuite( "factorial"
                             )
 
 test_result = runTestSuite(test_suite)
-
-printHTMLProtocol(test_result)
