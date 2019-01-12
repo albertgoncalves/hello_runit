@@ -5,7 +5,9 @@ with pkgs; mkShell {
                     rPackages.RUnit
                   ];
     shellHook = ''
-        alias ls='ls --color=auto'
-        alias ll='ls -al'
+        if [ $(uname -s) = "Darwin" ]; then
+            alias ls='ls --color=auto'
+            alias ll='ls -al'
+        fi
     '';
 }
