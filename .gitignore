@@ -1,4 +1,5 @@
 *
+!.lintr
 !.gitignore
 !shell.nix
 !*.R
