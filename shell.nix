@@ -4,6 +4,7 @@ with pkgs; mkShell {
     buildInputs = [ R
                     rPackages.RUnit
                     rPackages.lintr
+                    glibcLocales
                     gawk
                   ];
     shellHook = ''
